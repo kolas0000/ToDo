@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 * {
     margin: 0%;
@@ -8,9 +10,54 @@
 .TodoList h1 {
     font-family: "Kanit", sans-serif;
     font-weight: 300;
+    padding-bottom: 3%;
+}
 
+.TodoList input {
+   height: 4vh;
+   width: 60%;
+   position: relative;
+}
+
+.Element-todolist {
+    width: 60%;
 }
 
 .TodoList {
-   text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.TodoList .poisk {
+    position: absolute;
+    left: 62%;
+    bottom: 88.3%;
+}
+
+input::placeholder {
+    padding: 10px;
+font-family: "Inter", sans-serif;
+}
+
+.Element-todolist input {
+border:1px solid #6C63FF;
+border-radius: 4px;
+}
+
+.notes {
+    height: 4vh;
+    width: 10%;
+    background-color: #6C63FF;
+    color: #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.notes option {
+    padding: 10px;
 }

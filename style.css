@@ -7,6 +7,15 @@
     padding: 0%;
 }
 
+body {
+    background-color: #ffffff;
+}
+
+.style-black {
+    background-color: rgb(41, 41, 41);
+    color: #ffffff;
+}
+
 .TodoList h1 {
     font-family: "Kanit", sans-serif;
     font-weight: 300;
@@ -129,24 +138,59 @@ border-radius: 4px;
     justify-content: center;
 }
 
-.modelWindow {
-    display: flex;
+.model-Window-white {
+    display: none;
     flex-direction: column;
     width: 30%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    border: 1px solid black;
     height: 30vh;
     position: absolute;
     z-index: 2;
     top: 25%;
     background-color: #ffffff;
     border-radius: 10px;
-    visibility: hidden;
+  
 }
 
-.modelWindow h1 {
+.model-Window-black {
+    display: none;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 41);
+    color: #ffffff;
+
+}
+
+.windows {
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.add:hover {
+cursor: pointer;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.model-Window-black h1 {
  font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+
+.model-Window-white h1 {
+    font-family: "Kanit", sans-serif;
     font-weight: 400;
 }
 
@@ -155,6 +199,9 @@ border-radius: 4px;
     height: 3vh;
     border: 1px solid #6C63FF;
     border-radius: 5px;
+}
+.model-Window-black input {
+    border: 2px solid #6C63FF;
 }
 
 .btns {

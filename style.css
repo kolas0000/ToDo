@@ -40,7 +40,7 @@ body {
     height: 22vh;
 }
 
-.TodoList .changeStyle {
+.TodoList .change-Style {
     width: 2%;
     height: 4vh;
     position: absolute;
@@ -48,6 +48,36 @@ body {
     background-color: #6C63FF;
     border: none;
     border-radius: 5px;
+    background-image: url(Vector.svg);
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: center;
+    transition: transform 0.2s ease
+}
+
+.TodoList .change-Sun {
+    width: 2%;
+    height: 4vh;
+    position: absolute;
+    margin-left: 1%;
+    background-color: #6C63FF;
+    border: none;
+    border-radius: 5px;
+    background-image: url(Color\ Scheme.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+    transition: transform 0.2s ease
+}
+
+.change-Sun:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.change-Style:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .TodoList .poisk {
@@ -169,12 +199,7 @@ border-radius: 4px;
 
 }
 
-.windows {
-    background-color: red;
-    height: 100vh;
-    width: 100%;
-    
-}
+
 
 .add:hover {
 cursor: pointer;
@@ -230,4 +255,15 @@ cursor: pointer;
     font-family: "Kanit", sans-serif;
     color: #ffffff;
     font-size: 16px;
+}
+
+.dark-transparent-layer {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
 }

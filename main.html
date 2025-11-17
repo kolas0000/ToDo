@@ -13,29 +13,27 @@
         <div class="Element-todolist">
         <h1>TODO LIST</h1>
         <input type="search" id="search" placeholder="Search note..." >
-        <img class="poisk" src="/todo/Vector (2).svg">
+        <img class="poisk" src="Vector (2).svg">
         <button type="submit"></button>
-        <select class="notes" id="notes" name="notes">
-            <option value="all">ALL</option>
-            <option value="active">active</option>
-            <option value="completed">completed</option>
+        <select class="notes" name="notes">
+            <option value="all" id="all">ALL</option>
+            <option value="active" id="active">active</option>
+            <option value="completed" id="completedNots">completed</option>
         </select>
-        <button class="changeStyle"><img src="Vector.svg"></button>
+        <button class="change-Sun Style" id="stylebtn"></button>
         </div>
         
     </div>
     <div class="main-list">
 
-    <div class="listing">
-    
-    <div class="list"> <div class="note-dontComplete"><input type="checkbox"><span>NOTE #1</span></div> <div class="control"><img src="/todo/Vector (3).svg"> <img src="trash-svgrepo-com 1.svg"></div></div>
-   <div class="list"> <div class="note-dontComplete"><input type="checkbox"><span>NOTE #1</span></div> <div class="control"><img src="/todo/Vector (3).svg"> <img src="trash-svgrepo-com 1.svg"></div></div>
-<div class="list"> <div class="note-dontComplete"><input type="checkbox"><span>NOTE #1</span></div> <div class="control"><img src="/todo/Vector (3).svg"> <img src="trash-svgrepo-com 1.svg"></div></div>
+    <div class="listing" id="listing">
+
   
     </div>
     </div>
     
     <button class="add" id="add"><img src="Vector.png"></button>
+    <div class="dark-transparent-layer" id="layer"></div>
     <div class="windows">
 
     <div class="model-Window-black white"  id="modelWindow">
@@ -48,5 +46,6 @@
     </div>
     </div>
     </body>
-<script src="/todo/code.js"></script>
+    
+<script src="code.js"></script>
 </html>
